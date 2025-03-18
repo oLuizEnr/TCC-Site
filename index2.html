@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>HealthWatch</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>HealthWatch</h1>
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>
+            <button id="botaoTema" @click="mudarModo">
+                <div id="fundo">
+                    <i class="bi bi-moon-fill" v-if="eModoEscuro"></i>
+                    <i class="bi bi-sun-fill bg-light" v-else></i>
+                </div>
+            </button>
+        </header>
+        <main>
+
+        </main>
+        <aside>
+
+        </aside>
+        <article>
+
+        </article>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
