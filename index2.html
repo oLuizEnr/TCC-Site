@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style3.css">
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>HealthWatch</title>
 </head>
 <body>
     <div id="app">
         <header>
-            <h1>HealthWatch</h1>
-            <div class="link"></div>
-            <div class="link"></div>
-            <div class="link"></div>
-            <button id="botaoTema" @click="mudarModo">
-                <div id="fundo">
-                    <i class="bi bi-moon-fill" v-if="eModoEscuro"></i>
-                    <i class="bi bi-sun-fill bg-light" v-else></i>
-                </div>
-            </button>
+            <div class="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 p-4 bg-white mx-auto">
+                Seu conteúdo
+            </div>              
         </header>
+        <aside class="flex absolute bg-gray-100 gap-4 p-4 justify-center items-center
+                        flex-row w-full h-20 bottom-0 right-0
+                        md:flex-col md:w-32 md:h-80 md:top-52 md:right-4">
+            <div class="h-12 w-12 justify-between md:h-20 md:w-20 bg-white p-4 rounded shadow">b1</div>
+            <div class="h-12 w-12 justify-between md:h-20 md:w-20 bg-white p-4 rounded shadow">b2</div>
+            <div class="h-12 w-12 justify-between md:h-20 md:w-20 bg-white p-4 rounded shadow">b3</div>
+            <div class="h-12 w-12 justify-between md:h-20 md:w-20 bg-white p-4 rounded shadow">b4</div>
+        </aside>
+          
         <main>
 
         </main>

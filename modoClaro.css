@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    font-family: "Outfit", serif;
+    transition: .5s;
+}
+body {
+    background-color: #ebebeb;
+    color: #000;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 3vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    transition: .1s;
+}
+#botaoTema {
+    height: 5vh;
+    width: 4vw;
+    background-color: #ebebeb;
+    border: .2vw solid #000;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+}
+#fundo {
+    height: 4.6vh;
+    width: 4.6vh;
+    background-color: #000;
+    border-radius: 1vw;
+    position: absolute;
+    left: -.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+        font-size: 2.5vh;
+        color: #fff;
+    }
+}
