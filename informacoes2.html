@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Informações</title>
+    <style>
+        header {
+            font-family: "Montserrat", sans-serif;
+            font-size: 3vw
+        }
+
+        main h3 {
+            font-family: "Inter", sans-serif;
+            font-size: 1.5vw;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="flex w-full h-28 p-8 items-center justify-between
+                    md:border-b-4">
+            <p>HEALTHWATCH</p>
+            <img src="img/userIcon.png" class="md:w-16">
+        </div>              
+    </header>
+    <aside class="flex absolute bg-gray-100 gap-4 p-4 justify-evenly items-center rounded-2xl
+                    flex-row w-full h-20 bottom-0 right-0
+                    md:flex-col md:w-24 md:h-96 md:top-52 md:right-4">
+        <a href="index2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-white hover:bg-gray-300 p-4 rounded shadow">
+            <img src="img/iconHome.png">
+        </a>
+        <a href="informacoes2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-gray-300 p-4 rounded shadow">
+            <img src="img/iconInfo.png">
+        </a>
+        <a href="servicos2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-white hover:bg-gray-300 p-4 rounded shadow">
+            <img src="img/iconHeart.png">
+        </a>
+    </aside>
+    <main class="bg-gray-100 rounded-3xl p-4 shadow
+                md:absolute md:top-48 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw] md:h-[60vh]">
+        <h3 class="flex justify-center md:absolute md:top-4 md:w-[70vw]">
+            Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!
+        </h3>
+        <div class="absolute bg-gray-300 md:top-20 md:left-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+            <img src="img/max30100.png" alt="Max30100" class="absolute md:h-36 md:w-36 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
+            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-4">
+                Sensor Max30100:<br>
+                Monitora a frequência cardíaca<br>
+                por meio da iluminação e<br>
+                captação do sangue quando bombeado.
+            </p>
+        </div>
+        <div class="absolute bg-gray-300 md:top-20 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+            <img src="img/flexiblepcb.png" alt="PCB Flexível" class="absolute md:h-36 md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-12">
+            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[12vw] md:top-12">
+                Flexbile Pcb:<br>
+                Responsável por conectar todo o circuito.
+            </p>
+        </div>
+        <div class="absolute bg-gray-300 md:top-20 md:right-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+            <img src="img/bmp280.png" alt="Bmp280" class="absolute md:h-32 md:w-32 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
+            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
+                Sensor Bmp280:<br>
+                Verifica a pressão e a<br>
+                temperatura a partir da<br>
+                conversão da suas variações<br>
+                e converte em sinais elétricos.
+            </p>
+        </div>
+    </main>
+</body>
+</html>
