@@ -12,7 +12,7 @@
     <style>
         header {
             font-family: "Montserrat", sans-serif;
-            font-size: 3vw
+            font-size: 3vw;
         }
 
         main h3 {
@@ -25,15 +25,21 @@
             font-family: "Inter", sans-serif;
             font-size: 1vw;
         }
+
+        footer p {
+            font-family: "Inter", sans-serif;
+            font-size: 1.2vw;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="flex w-full h-28 p-8 items-center justify-between
-                    md:border-b-4">
+    <header class="relative">
+        <div class="absolute bg-blue-950 md:top-0 md:h-4 w-full z-1"></div>
+        <div class="relative flex items-center justify-between w-full md:h-28 p-4 border-b-4">
             <p>HEALTHWATCH</p>
-            <img src="img/userIcon.png" class="md:w-16">
-        </div>              
+            <img src="img/userIcon.png" alt="userPhoto" class="md:w-16">
+        </div>
     </header>
     <aside class="flex absolute bg-gray-100 gap-4 p-4 justify-evenly items-center rounded-2xl
                     flex-row w-full h-20 bottom-0 right-0
@@ -53,7 +59,7 @@
         <h3 class="flex justify-center md:absolute md:top-4 md:w-[70vw]">
             Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!
         </h3>
-        <div class="absolute bg-gray-300 md:top-20 md:left-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+        <div class="absolute bg-white md:top-20 md:left-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
             <img src="img/max30100.png" alt="Max30100" class="absolute md:h-36 md:w-36 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
             <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
                 <strong>Max30100:</strong><br>
@@ -62,7 +68,7 @@
                 captação do sangue quando bombeado.
             </p>
         </div>
-        <div class="absolute bg-gray-300 md:top-20 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+        <div class="absolute bg-white md:top-20 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
             <img src="img/flexiblepcb.png" alt="PCB Flexível" class="absolute md:h-36 md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-8">
             <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-8">
                 <strong>Flexible Pcb:</strong><br>
@@ -72,7 +78,7 @@
                 na pulseira.
             </p>
         </div>
-        <div class="absolute bg-gray-300 md:top-20 md:right-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+        <div class="absolute bg-white md:top-20 md:right-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
             <img src="img/bmp280.png" alt="Bmp280" class="absolute md:h-32 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
             <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
                 <strong>Bmp280:</strong><br>
@@ -83,5 +89,16 @@
             </p>
         </div>
     </main>
+    <footer class="md:flex md:items-center md:absolute md:bg-black md:w-full md:h-12 md:bottom-0 md:p-4">
+        <p>
+            <strong>Créditos: </strong>
+            Lucas Batista dos Santos, 
+            Luiz Enrique Silva Souza, 
+            Marcelo Fransciso Josafá Ribeiro Martins, 
+            Matheus Ferrante Silva, 
+            Nailah Hirai Koedel e 
+            Thomas Comissário da Silva.
+        </p>
+    </footer>
 </body>
 </html>

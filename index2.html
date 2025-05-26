@@ -28,15 +28,20 @@
             color: #fff;
         }
 
+        footer p {
+            font-family: "Inter", sans-serif;
+            font-size: 1.2vw;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="flex w-full h-28 p-8 items-center justify-between
-                    md:border-b-4">
+    <header class="relative">
+        <div class="absolute bg-blue-950 md:top-0 md:h-4 w-full z-1"></div>
+        <div class="relative flex items-center justify-between w-full md:h-28 p-4 border-b-4">
             <p>HEALTHWATCH</p>
-            <img src="img/userIcon.png" class="md:w-16">
-        </div>              
+            <img src="img/userIcon.png" alt="userPhoto" class="md:w-16">
+        </div>
     </header>
     <aside class="flex absolute bg-gray-100 gap-4 p-4 justify-evenly items-center rounded-2xl
                     flex-row w-full h-20 bottom-0 right-0
@@ -52,17 +57,28 @@
         </a>
     </aside>
     <main class="flex justify-center
-                md:absolute md:top-44 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw]">
+                md:absolute md:top-40 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw]">
         <img src="img/fundoTopo.png" class="rounded-3xl">
-        <h3 class="absolute md:top-44 md:left-20">
+        <h3 class="absolute md:top-40 md:left-20">
             Alinhamos saúde à tecnologia
         </h3>
-        <p class="absolute md:top-56 md:left-20">
+        <p class="absolute md:top-52 md:left-20">
             Nossa pulseira irá proporcionar a<br>
             experiência de acompanhar seu<br>
             bem-estar em tempo real, a qualquer<br>
             hora e lugar.
         </p>
     </main>
+    <footer class="md:flex md:items-center md:absolute md:bg-black md:w-full md:h-12 md:bottom-0 md:p-4">
+        <p>
+            <strong>Créditos: </strong>
+            Lucas Batista dos Santos, 
+            Luiz Enrique Silva Souza, 
+            Marcelo Fransciso Josafá Ribeiro Martins, 
+            Matheus Ferrante Silva, 
+            Nailah Hirai Koedel e 
+            Thomas Comissário da Silva.
+        </p>
+    </footer>
 </body>
 </html>
