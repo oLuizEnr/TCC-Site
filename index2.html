@@ -1,84 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Inicio</title>
-    <style>
-        header {
-            font-family: "Montserrat", sans-serif;
-            font-size: 3vw
-        }
-
-        main h3 {
-            font-family: "Inter", sans-serif;
-            font-size: 2vw;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        main p {
-            font-family: "Inter", sans-serif;
-            font-size: 1.5vw;
-            color: #fff;
-        }
-
-        footer p {
-            font-family: "Inter", sans-serif;
-            font-size: 1.2vw;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>HealthWatch</title>
 </head>
 <body>
-    <header class="relative">
-        <div class="absolute bg-blue-950 md:top-0 md:h-4 w-full z-1"></div>
-        <div class="relative flex items-center justify-between w-full md:h-28 p-4 border-b-4">
-            <p>HEALTHWATCH</p>
-            <img src="img/userIcon.png" alt="userPhoto" class="md:w-16">
-        </div>
-    </header>
-    <aside class="flex absolute bg-gray-100 gap-4 p-4 justify-evenly items-center rounded-2xl
-                    flex-row w-full h-20 bottom-0 right-0
-                    md:flex-col md:w-24 md:h-96 md:top-52 md:right-4">
-        <a href="index2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-gray-300 p-4 rounded shadow">
-            <img src="img/iconHome.png">
-        </a>
-        <a href="informacoes2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-white hover:bg-gray-300 p-4 rounded shadow">
-            <img src="img/iconInfo.png">
-        </a>
-        <a href="servicos2.html" class="h-12 w-12 justify-between md:h-12 md:w-12 bg-white p-4 hover:bg-gray-300 rounded shadow">
-            <img src="img/iconHeart.png">
-        </a>
-    </aside>
-    <main class="flex justify-center
-                md:absolute md:top-40 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw]">
-        <img src="img/fundoTopo.png" class="rounded-3xl">
-        <h3 class="absolute md:top-40 md:left-20">
-            Alinhamos saúde à tecnologia
-        </h3>
-        <p class="absolute md:top-52 md:left-20">
-            Nossa pulseira irá proporcionar a<br>
-            experiência de acompanhar seu<br>
-            bem-estar em tempo real, a qualquer<br>
-            hora e lugar.
-        </p>
-    </main>
-    <footer class="md:flex md:items-center md:absolute md:bg-black md:w-full md:h-12 md:bottom-0 md:p-4">
-        <p>
-            <strong>Créditos: </strong>
-            Lucas Batista dos Santos, 
-            Luiz Enrique Silva Souza, 
-            Marcelo Fransciso Josafá Ribeiro Martins, 
-            Matheus Ferrante Silva, 
-            Nailah Hirai Koedel e 
-            Thomas Comissário da Silva.
-        </p>
-    </footer>
+    <div id="app">
+        <img src="./img/fundoTopo.png" id="inicio">
+        <header>
+            <p>HealthWatch</p>
+            <div class="links">
+                <a href="" class="link">Inicio</a>
+                <a href="" class="link">Serviços</a>
+                <a href="" class="link">Informações</a>
+                <button>a</button>
+            </div>
+        </header>
+        <p id="title">Alinhamos saúde à tecnologia</p>
+        <p id="content">Nossa pulseira irá proporcionar a <br>experiência de acompanhar
+            seu bem-<br>estar em tempo real, a qualquer hora e <br>lugar.</p>
+        <main>
+            <div id="abaH">
+                <p>Abaixo seguem os dados das opções ao lado</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="abaHmenor">Frequência cardiaca</div>
+                    <img src="./img/freqCard.png">
+                    <div class="saida"></div>
+                </div>
+                <div class="card">
+                    <div class="abaHmenor">Pressão cardiaca</div>
+                    <img src="./img/presCard.png">
+                    <div class="saida"></div>
+                </div>
+                <div class="card">
+                    <div class="abaHmenor">Oxigenação</div>
+                    <img src="./img/oxigen.png">
+                    <div class="saida"></div>
+                </div>
+            </div>
+        </main>
+        <article>
+            <p>Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!</p>
+            <div id="flexiblepcb">
+                <img src="./img/flexiblepcb.png">
+                <p>Flexbile Pcb<br>
+                    Responsável por conectar todo o circuito.</p>
+            </div>
+            <div id="max30100">
+                <img src="./img/max30100.png">
+                <p>Sensor Max30100<br>
+                    Monitora a frequência cardíaca por meio da <br>
+                    iluminação e captação do <br>
+                    sangue quando bombeado.</p>
+            </div>
+            <div id="bmp280">
+                <img src="./img/bmp280.png">
+                <p>Sensor Bmp280<br>
+                    Verifica a pressão e a <br>
+                    temperatura a partir da <br>
+                    conversão da suas <br>
+                    variações e converte em <br>
+                    sinais elétricos.</p>
+            </div>
+        </article>
+    </div>
 </body>
 </html>
