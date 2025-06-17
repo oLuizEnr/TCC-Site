@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Informações</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        header {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            flex: 1;
+        }
+
+        .marquee-inner {
+            display: inline-flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee-inner span {
+            padding-right: 4rem; /* Espaço entre as repetições */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(10);
+            }
+            100% {
+                transform: translateX(-45%);
+            }
+        }
+    </style>
+</head>
+<body>
+        
+    <header class="flex items-center justify-between w-full border-b-2 h-16
+                    md:border-b-4 md:h-28">
+        <div class="absolute bg-blue-950 w-full top-0 h-2
+                    md:h-4"></div>
+        <p class="text-2xl p-4 md:text-5xl md:p-8">HEALTHWATCH</p>
+        <img src="img/userIcon.png" alt="userPhoto" class="w-16 p-4 md:w-32 md:p-8">
+    </header>
+
+    <aside class="bg-gray-100 w-full h-16 p-4 absolute bottom-0 right-0 flex flex-row justify-evenly items-center fixed
+                    md:w-24 md:h-96 md:top-52 md:right-8 md:flex-col md:rounded-2xl">
+        <a href="index.html" class="bg-white w-12 h-12 p-4 md:h-12 md:w-12 rounded shadow hover:bg-gray-300">
+            <img src="img/iconHome.png">
+        </a>
+        <a href="equipamento.html" class="bg-gray-300 w-12 h-12 p-4 rounded shadow">
+            <img src="img/iconInfo.png">
+        </a>
+        <a href="resultado.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
+            <img src="img/iconHeart.png">
+        </a>
+    </aside>
+
+    <main>
+        <div class="bg-gray-100 rounded-3xl p-4 shadow
+                    md:absolute md:top-48 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw] md:h-[60vh]">
+            <h3 class="flex justify-center md:absolute md:top-4 md:w-[70vw]">
+                Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!
+            </h3>
+            <div class="absolute bg-white md:top-20 md:left-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+                <img src="img/max30100.png" alt="Max30100" class="absolute md:h-36 md:w-36 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
+                <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
+                    <strong>Max30100:</strong><br>
+                    Monitora a frequência cardíaca<br>
+                    por meio da iluminação e<br>
+                    captação do sangue quando bombeado.
+                </p>
+            </div>
+            <div class="absolute bg-white md:top-20 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+                <img src="img/flexiblepcb.png" alt="PCB Flexível" class="absolute md:h-36 md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-8">
+                <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-8">
+                    <strong>Flexible Pcb:</strong><br>
+                    Responsável por conectar todo<br>
+                    o circuito, é graças a ele que é<br>
+                    possivel a união dos sensores<br>
+                    na pulseira.
+                </p>
+            </div>
+            <div class="absolute bg-white md:top-20 md:right-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
+                <img src="img/bmp280.png" alt="Bmp280" class="absolute md:h-32 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
+                <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
+                    <strong>Bmp280:</strong><br>
+                    Verifica a pressão e a<br>
+                    temperatura a partir da<br>
+                    conversão da suas variações<br>
+                    e converte em sinais elétricos.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <main class="bg-gradient-to-br from-blue-950 to-black w-[80vw] h-[65vh] absolute left-1/2 top-[20vh] transform -translate-x-1/2 rounded-3xl
+                    md:w-[70vw] md:top-[27vh]">
+        <h1 class="absolute left-1/2 top-[-7vh] transform -translate-x-1/2 text-2xl
+                    md:top-[-11vh] md:text-5xl">
+            <strong class="bg-gray-100 w-[50vw] flex justify-center items-center rounded-2xl
+                            md:w-[40vw] md:h-[10vh]">Nossos equipamentos</strong>
+        </h1>
+    </main>
+
+    <footer class="bg-black w-full h-12 p-4 absolute bottom-0 text-lg text-white hidden
+                    md:flex md:items-center">
+        <p class="whitespace-nowrap"><strong>Créditos:</strong></p>
+        <div class="marquee">
+        <div class="marquee-inner">
+            <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
+            <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

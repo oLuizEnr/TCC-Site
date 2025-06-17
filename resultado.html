@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Informações</title>
+    <title>Resultados</title>
     <style>
         body {
             font-family: "Inter", sans-serif;
@@ -35,16 +35,16 @@
 
         @keyframes marquee {
             0% {
-                transform: translateX(10);
+                transform: translateX(0);
             }
             100% {
-                transform: translateX(-45%);
+                transform: translateX(-50%);
             }
         }
     </style>
 </head>
 <body>
-        
+
     <header class="flex items-center justify-between w-full border-b-2 h-16
                     md:border-b-4 md:h-28">
         <div class="absolute bg-blue-950 w-full top-0 h-2
@@ -58,48 +58,21 @@
         <a href="index.html" class="bg-white w-12 h-12 p-4 md:h-12 md:w-12 rounded shadow hover:bg-gray-300">
             <img src="img/iconHome.png">
         </a>
-        <a href="informacoes.html" class="bg-gray-300 w-12 h-12 p-4 rounded shadow">
+        <a href="equipamento.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
             <img src="img/iconInfo.png">
         </a>
-        <a href="servicos.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
+        <a href="resultado.html" class="bg-gray-300 w-12 h-12 p-4 rounded shadow">
             <img src="img/iconHeart.png">
         </a>
     </aside>
 
-    <main class="bg-gray-100 rounded-3xl p-4 shadow
-                md:absolute md:top-48 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[70vw] md:h-[60vh]">
-        <h3 class="flex justify-center md:absolute md:top-4 md:w-[70vw]">
-            Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!
-        </h3>
-        <div class="absolute bg-white md:top-20 md:left-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-            <img src="img/max30100.png" alt="Max30100" class="absolute md:h-36 md:w-36 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
-            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
-                <strong>Max30100:</strong><br>
-                Monitora a frequência cardíaca<br>
-                por meio da iluminação e<br>
-                captação do sangue quando bombeado.
-            </p>
-        </div>
-        <div class="absolute bg-white md:top-20 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-            <img src="img/flexiblepcb.png" alt="PCB Flexível" class="absolute md:h-36 md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-8">
-            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-8">
-                <strong>Flexible Pcb:</strong><br>
-                Responsável por conectar todo<br>
-                o circuito, é graças a ele que é<br>
-                possivel a união dos sensores<br>
-                na pulseira.
-            </p>
-        </div>
-        <div class="absolute bg-white md:top-20 md:right-16 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-            <img src="img/bmp280.png" alt="Bmp280" class="absolute md:h-32 md:left-1/2 md:transform md:-translate-x-1/2 md:top-8">
-            <p class="absolute md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:bottom-8">
-                <strong>Bmp280:</strong><br>
-                Verifica a pressão e a<br>
-                temperatura a partir da<br>
-                conversão da suas variações<br>
-                e converte em sinais elétricos.
-            </p>
-        </div>
+    <main class="bg-gradient-to-br from-blue-950 to-black w-[80vw] h-[65vh] absolute left-1/2 top-[20vh] transform -translate-x-1/2 rounded-3xl
+                    md:w-[70vw] md:top-[27vh]">
+        <h1 class="absolute left-1/2 top-[-7vh] transform -translate-x-1/2 text-2xl
+                    md:top-[-11vh] md:text-5xl">
+            <strong class="bg-gray-100 w-[50vw] flex justify-center items-center rounded-2xl
+                            md:w-[30vw] md:h-[10vh]">Medições atuais</strong>
+        </h1>
     </main>
 
     <footer class="bg-black w-full h-12 p-4 absolute bottom-0 text-lg text-white hidden
