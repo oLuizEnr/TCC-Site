@@ -1,107 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Inicio</title>
-    <style>
-        body {
-            font-family: "Inter", sans-serif;
-        }
-
-        header {
-            font-family: "Montserrat", sans-serif;
-        }
-
-        .marquee {
-            overflow: hidden;
-            white-space: nowrap;
-            flex: 1;
-        }
-
-        .marquee-inner {
-            display: inline-flex;
-            animation: marquee 20s linear infinite;
-        }
-
-        .marquee-inner span {
-            padding-right: 4rem; /* Espaço entre as repetições */
-        }
-
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <header class="w-full h-16 border-b-2 flex justify-between items-center
-                    md:h-28 md:border-b-4">
-        <div class="bg-blue-950 w-full h-2 absolute top-0
-                    md:h-4"></div>
-        <p class="p-4 text-2xl md:p-8 md:text-5xl">HEALTHWATCH</p>
-        <img src="img/userIcon.png" alt="userPhoto" class="w-16 p-4 md:w-32 md:p-8">
-    </header>
-
-    <aside class="bg-gray-100 w-full h-16 p-4 absolute bottom-0 right-0 flex flex-row justify-evenly items-center fixed
-                    md:w-24 md:h-96 md:top-[40vh] md:right-8 md:flex-col md:rounded-2xl">
-        <a href="index.html" class="bg-gray-300 w-12 h-12 p-4 md:h-12 md:w-12 rounded shadow">
-            <img src="img/iconHome.png">
-        </a>
-        <a href="equipamento.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
-            <img src="img/iconInfo.png">
-        </a>
-        <a href="resultado.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
-            <img src="img/iconHeart.png">
-        </a>
-    </aside>
-
-    <main class="bg-gradient-to-br from-blue-950 to-black w-[80vw] h-[65vh] absolute left-1/2 top-[20vh] transform -translate-x-1/2 rounded-3xl
-                    md:w-[70vw] md:top-[27vh]">
-        <h1 class="absolute left-1/2 top-[-7vh] transform -translate-x-1/2 text-2xl
-                    md:top-[-11vh] md:text-5xl">
-            <strong class="bg-gray-100 w-[50vw] flex justify-center items-center rounded-2xl
-                            md:w-[30vw] md:h-[10vh]">Seja bem-vindo</strong>
-        </h1>
-        <img src="img/fundoTopo.png" class="w-[95vw] display-none rounded-3xl absolute left-0
-                                            md:w-[80vw] md:h-[65vh] md:rotate-0 md:display-block">
-        <div class="w-full h-full text-white flex justify-center absolute">
-            <strong>
-                <h3 class="text-xl w-52 absolute top-[8vh] left-1/2 transform -translate-x-1/2 text-center
-                            md:text-5xl md:w-[60vw] md:top-40 md:left-96">
-                    Alinhamos saúde à tecnologia
-                </h3>
-            </strong>
-            <p class="text-lg absolute top-[20vh] text-center
-                        md:text-3xl md:top-52 md:left-20">
-                Nossa pulseira irá proporcionar a<br>
-                experiência de acompanhar seu<br>
-                bem-estar em tempo real, a qualquer<br>
-                hora e lugar.
-            </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+        <header class="w-full h-16 border-b-2 flex justify-between items-center
+                        md:h-28 md:border-b-4">
+            <div class="bg-blue-950 w-full h-2 absolute top-0
+                        md:h-4"></div>
+            <p class="p-4 text-2xl md:p-8 md:text-[3vw]">HEALTHWATCH</p>
+            <img src="img/userIcon.png" alt="userPhoto" class="w-16 p-4 md:w-32 md:p-8">
+        </header>
+        <aside class="bg-gray-100 w-full h-16 p-4 absolute bottom-0 right-0 flex flex-row justify-evenly items-center fixed
+                        md:w-24 md:h-96 md:top-[30vh] md:right-[3vw] md:flex-col md:rounded-2xl">
+            <a href="index.html" class="bg-gray-300 w-12 h-12 p-4 md:h-12 md:w-12 rounded shadow">
+                <img src="img/iconHome.png">
+            </a>
+            <a href="equipamento.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
+                <img src="img/iconInfo.png">
+            </a>
+            <a href="resultado.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
+                <img src="img/iconHeart.png">
+            </a>
+        </aside>
+        <main class="w-[80vw] h-[65vh] absolute left-1/2 top-[20vh] transform -translate-x-1/2 rounded-3xl
+                        md:w-[70vw] md:top-[27vh]">
+            <h1 class="absolute left-1/2 top-[-7vh] transform -translate-x-1/2 text-2xl
+                        md:top-[-11vh] md:text-[3vw]">
+                <strong class="bg-gray-100 w-[50vw] flex justify-center items-center rounded-2xl
+                                md:w-[30vw] md:h-[10vh]">Seja bem-vindo</strong>
+            </h1>
+            <div class="w-full h-full text-white flex justify-center absolute">
+                <strong class="md:top-20 md:left-72">
+                    <h3 class="text-xl w-52 absolute left-1/2 transform -translate-x-1/2
+                                md:text-[2.5vw] md:leading-tight md:w-[30vw] md:top-20 md:left-72">
+                        Alinhamos saúde à tecnologia
+                    </h3>
+                </strong>
+                <p class="w-[25vw] text-lg text-start absolute top-[20vh]
+                            md:text-[2vw] md:leading-tight md:top-52 md:left-12">
+                    Nossa pulseira irá proporcionar a experiência de acompanhar seu
+                    bem-estar em tempo real, a qualquer hora e lugar.
+                </p>
+            </div>
+        </main>
+        <footer class="bg-black w-full h-12 p-4 absolute bottom-0 text-lg text-white hidden fixed
+                        md:flex md:items-center">
+            <p class="whitespace-nowrap"><strong>Créditos:  </strong></p>
+            <div class="marquee">
+            <div class="marquee-inner">
+                <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
+                <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
+            </div>
         </div>
-    </main>
-
-    <footer class="bg-black w-full h-12 p-4 absolute bottom-0 text-lg text-white hidden fixed
-                    md:flex md:items-center">
-        <p class="whitespace-nowrap"><strong>Créditos:  </strong></p>
-        <div class="marquee">
-        <div class="marquee-inner">
-            <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
-            <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel e Thomas Comissário da Silva. • </span>
-        </div>
-    </div>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>

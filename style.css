@@ -1,190 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
-* {
-    margin:  0;
-    box-sizing: border-box;
-    font-family: "Bree Serif", serif;
-}
-
 body {
-    background-color: #ececec;
-}
-
-#inicio {
-    width: 100%;
-    position: absolute;
+    font-family: "Inter", sans-serif;
 }
 
 header {
-    & p {
-    color: #fff;
-    font-size: 5vw;
-    position: absolute;
-    left: 5vw;
-    top: 2vh;
-    } & .links {
-        width: 40%;
-        display: flex;
-        justify-content: space-evenly;
-        position: absolute;
-        right: 5vw;
-        top: 2vh;
-    } & .link {
-        color: #fff;
-        font-size: 1.5vw;
-        text-decoration: none;
-        z-index: 1;
-    } & button {
-        z-index: 1;
-    }
-}
-
-#title {
-    color: #fff;
-    font-size: 2.5vw;
-    z-index: 1;
-    position: absolute;
-    left: 5vw;
-    top: 40vh;
-}
-
-#content {
-    color: #fff;
-    font-size: 1.8vw;
-    z-index: 1;
-    position: absolute;
-    left: 5vw;
-    top: 47vh;
+    font-family: "Montserrat", sans-serif;
 }
 
 main {
-    & #abaH {
-        height: 15vh;
-        width: 70vw;
-        background: linear-gradient(to right, #05122e, #157c8e);
-        border-radius: 4vw;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 50%;
-        top: 110vh;
-        transform: translateX(-50%);
-        & p {
-            color: #fff;
-            font-size: 2vw;
-        }
-    } & .cards {
-        height: 30vh;
-        width: 75vw;
-        display: flex;
-        justify-content: space-evenly;
-        position: absolute;
-        left: 50%;
-        top: 130vh;
-        transform: translateX(-50%);
-        & .card {
-            height: 40vh;
-            width: 15vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-    } & .abaHmenor {
-        height: 6vh;
-        width: 15vw;
-        background-color: #05122e;
-        color: #fff;
-        border-radius: 4vw;
-        font-size: 1.5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } & img {
-        height: 9vw;
-        width: 9vw;
-    } & .saida {
-        height: 6vh;
-        width: 15vw;
-        border: .15vw solid #0c2957;
-        border-radius: 2vw;
-    }
+    background-image: url('img/fundoTopo.png');
+    background-size: cover;
+    background-position: center;
 }
 
-article {
-    height: 75vh;
-    width: 85vw;
-    background-color: #05122e;
-    position: relative;
-    left: 50%;
-    top: 190vh;
-    transform: translateX(-50%);
-    & p {
-        width: 75vw;
-        color: #fff;
-        font-size: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-    } & #flexiblepcb {
-        height: 50vh;
-        width: 35vw;
-        position: relative;
-        left: 2.5vw;
-        top: 10vh;
-        & img {
-            height: auto;
-            width: 25vw;
-            position: relative
-        } & p {
-            width: 35vw;
-            font-size: 1.7vw;
-            position: relative;
-            top: 2vw;
-        }
-    } & #max30100 {
-        height: 25vh;
-        width: 35vw;
-        position: relative;
-        left: 45vw;
-        bottom: 40vh;
-        & img {
-            height: auto;
-            width: 14vw;
-            position: relative;
-            right: 0;
-        } & p {
-            width: 20vw;
-            font-size: 1.5vw;
-            position: relative;
-            left: 26vw;
-            top: -24vh
-        } 
-    } & #bmp280 {
-        height: 25vh;
-        width: 35vw;
-        position: relative;
-        left: 45vw;
-        bottom: 35vh;
-        & img {
-            height: auto;
-            width: 14vw;
-            position: relative;
-            right: 0vw;
-        } & p {
-            width: 20vw;
-            font-size: 1.5vw;
-            position: relative;
-            left: 25vw;
-            top: -25vh;
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
 
-        }
+.marquee-inner {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-inner span {
+    padding-right: 4rem; /* Espaço entre as repetições */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
