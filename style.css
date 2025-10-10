@@ -25,7 +25,7 @@ main {
     }
 
     & p {
-        font-size: clamp(1rem, 2vw + 1rem, 3rem); 
+        font-size: clamp(1rem, 1vw + 1rem, 2.5rem); 
     }
 }
 
