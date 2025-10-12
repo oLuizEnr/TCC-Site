@@ -3,5 +3,5 @@ from .models import Dados
 
 class DadosSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Lados
+        model = Dados
         fields = '__all__'

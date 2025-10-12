@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://oluizenr.github.io/'
+    'https://oluizenr.github.io'
 ]
 
 ROOT_URLCONF = 'brah.urls'
