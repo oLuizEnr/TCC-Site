@@ -7,6 +7,7 @@ from rest_framework import status
 from .models import Dados
 from .serializers import DadosSerializer
 
+# Requisitar e enviar dados
 @api_view(['POST'])
 def receber_dados_esp(request):
     serializer = DadosSerializer(data=request.data)
