@@ -23,10 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dfcovs0w5kd#$)wwt9a9&-qi2-p3uz+)jp)pnyv%o!-mvq2nqz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'tcc-site-gclc.onrender.com'
+    'localhost',
+    '127.0.0.1'
 ]
 
 
