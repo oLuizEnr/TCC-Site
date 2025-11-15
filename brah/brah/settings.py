@@ -70,7 +70,9 @@ ROOT_URLCONF = 'brah.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/'brah'/'templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

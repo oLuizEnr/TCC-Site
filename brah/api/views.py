@@ -18,6 +18,6 @@ def receber_dados_esp(request):
 
 @api_view(['GET'])
 def enviar_dados_front(request):
-    dados = Dados.objects.all().order_by('-data')[:20]
+    dados = Dados.objects.all().order_by('-leitura_h')[:20]
     serializer = DadosSerializer(dados, many=True)
     return Response(serializer.data)
