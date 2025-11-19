@@ -19,7 +19,7 @@ oxigen = document.getElementById('oxigen')
 // setInterval(getData, 20000);
 // getData();
 
-async function buscarData() {
+async function buscarDados() {
   const response = await fetch("https://tcc-site-gclc.onrender.com/enviar/");
   const dados = await response.json();
   console.log(dados);
