@@ -1,5 +1,5 @@
 const channelId = 3159128;
-const url = 'https://api.thingspeak.com/channels/{channelId}/feeds.json?results=2';
+const url = 'https://api.thingspeak.com/channels/3159128/feeds.json?api_key=SY8EGY52FB7DC1WC&results=2';
 
 freqCard = document.getElementById('freqCard')
 presCard = document.getElementById('presCard')
