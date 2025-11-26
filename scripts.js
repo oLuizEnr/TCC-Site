@@ -10,10 +10,13 @@ async function getData() {
     const data = await response.json();
     dados_atuais = data.feeds[data.feeds.length - 1]
     console.log(dados_atuais);
+    valor = dados_atuais.field2.toFixed(1)
+    dado = dados_atuais.field3
+    dado_tratado = dado.toFixed(1)
 
-    oxigen.innerText = `${dados_atuais.field1}`
-    freqCard.innerText = `${dados_atuais.field2}`
-    presCard.innerText = `${dados_atuais.field3}`
+    oxigen.innerText = `${dados_atuais.field1.toFixed(1)}`
+    freqCard.innerText = `${valor}`
+    presCard.innerText = `${dado_tratado}`
 }
 
 setInterval(getData, 20000);
