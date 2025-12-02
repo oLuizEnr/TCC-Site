@@ -9,20 +9,32 @@ oxigen = document.getElementById('oxigen')
 async function getData() {
     const responseTemp = await fetch(urlTemp);
     const dataTemp = await responseTemp.json();
-    valorTemp = parseFloat(dataTemp.feeds[0]['field1']).toFixed(1);
+    brutoTemp = dataTemp?.feeds?.[0]?.['field1'];
+    if (brutoTemp === undefined || brutoTemp === null || brutoTemp === "") {
+        brutoTemp = 0
+    };
+    valorTemp = parseFloat(brutoTemp).toFixed(1);
     temperatura.innerText = `${valorTemp}`;
 
     const responseFreq = await fetch(urlFreq);
     const dataFreq = await responseFreq.json();
-    valorFreq = parseFloat(dataFreq.feeds[0]['field1']).toFixed(1);
+    brutoFreq = dataFreq?.feeds?.[0]?.['field1']
+    if (brutoFreq === undefined || brutoFreq === null || brutoFreq === "") {
+        brutoFreq = 0
+    };
+    valorFreq = parseFloat(brutoFreq).toFixed(1);
     freqCard.innerText = `${valorFreq}`
 
     const responseOxigen = await fetch(urlOxigen);
     const dataOxigen = await responseOxigen.json();
-    valorOxigen = parseFloat(dataOxigen.feeds[0]['field1']).toFixed(1);
+    brutoOxigen = dataOxigen?.feeds?.[0]?.['field1']
+    if (brutoOxigen === undefined || brutoOxigen === null || brutoOxigen === "") {
+        brutoOxigen = 0
+    };
+    valorOxigen = parseFloat(brutoOxigen).toFixed(1);
     oxigen.innerText = `${valorOxigen}`
 
-    console.log(valorTemps, valorFreq, valorOxigen);
+    console.log(`Temperatura: ${valorTemp}, Frequência Cardíaca: ${valorFreq}, Oxigenação: ${valorOxigen}.`);
 }
 
 setInterval(getData, 20000);
