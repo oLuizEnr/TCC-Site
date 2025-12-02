@@ -1,22 +1,28 @@
-const channelId = 3159128;
-const url = 'https://api.thingspeak.com/channels/3159128/feeds.json?api_key=SY8EGY52FB7DC1WC&results=2';
+const urlTemp = 'https://api.thingspeak.com/channels/3159128/feeds.json?api_key=SY8EGY52FB7DC1WC&results=1';
+const urlFreq = 'https://api.thingspeak.com/channels/3159191/feeds.json?api_key=4H1A89903XG8J1CF&results=1';
+const urlOxigen = 'https://api.thingspeak.com/channels/3188878/feeds.json?api_key=2HIR85VDEWQTQX4W&results=1';
 
 freqCard = document.getElementById('freqCard')
-presCard = document.getElementById('presCard')
+temperatura = document.getElementById('temperatura')
 oxigen = document.getElementById('oxigen')
 
 async function getData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    dados_atuais = data.feeds[data.feeds.length - 1]
-    console.log(dados_atuais);
-    valor = dados_atuais.field2.toFixed(1)
-    dado = dados_atuais.field3
-    dado_tratado = dado.toFixed(1)
+    const responseTemp = await fetch(urlTemp);
+    const dataTemp = await responseTemp.json();
+    valorTemp = parseFloat(dataTemp.feeds[0]['field1']).toFixed(1);
+    temperatura.innerText = `${valorTemp}`;
 
-    oxigen.innerText = `${dados_atuais.field1.toFixed(1)}`
-    freqCard.innerText = `${valor}`
-    presCard.innerText = `${dado_tratado}`
+    const responseFreq = await fetch(urlFreq);
+    const dataFreq = await responseFreq.json();
+    valorFreq = parseFloat(dataFreq.feeds[0]['field1']).toFixed(1);
+    freqCard.innerText = `${valorFreq}`
+
+    const responseOxigen = await fetch(urlOxigen);
+    const dataOxigen = await responseOxigen.json();
+    valorOxigen = parseFloat(dataOxigen.feeds[0]['field1']).toFixed(1);
+    oxigen.innerText = `${valorOxigen}`
+
+    console.log(valorTemps, valorFreq, valorOxigen);
 }
 
 setInterval(getData, 20000);
