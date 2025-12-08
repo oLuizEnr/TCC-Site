@@ -1,9 +1,13 @@
 body {
     font-family: "Inter", sans-serif;
+    /* color: linear-gradient(90deg,#001780 0%, #37bd85 100%); */
 }
 
 header {
     font-family: "Montserrat", sans-serif;
+    color: #37bd85;
+    /* background-color: #172554 */
+    background-color: #fff;
 }
 
 main {
@@ -15,8 +19,9 @@ main {
         font-size: clamp(.6rem, 1.6vw + .6rem, 2rem);
 
         & strong {
-            box-shadow: #959da533 0px 8px 24px;
+            /* box-shadow: #959da533 0px 8px 24px; */
             color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
+            border-bottom: 3px solid #172554;
         }
     }
 
@@ -25,7 +30,12 @@ main {
     }
 
     & p {
-        font-size: clamp(1rem, 1vw + 1rem, 2.5rem); 
+        font-size: clamp(1rem, 1vw + 1rem, 2.5rem);
+        color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
+    }
+
+    & strong {
+        color: #16a368;
     }
 }
 
