@@ -39,6 +39,11 @@ main {
     }
 }
 
+footer {
+    border-top: 4px solid #e5e7eb;
+    color: #37bd85;
+}
+
 .marquee {
     overflow: hidden;
     white-space: nowrap;
