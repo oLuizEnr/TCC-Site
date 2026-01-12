@@ -11,65 +11,45 @@
         <title>Equipamentos - BRAH</title>
     </head>
     <body>    
-        <header class="w-full h-16 border-b-2 flex justify-between items-center
-                        md:h-28 md:border-b-4">
-            <div class="bg-blue-950 w-full h-2 absolute top-0
-                        md:h-4"></div>
-            <p class="p-4 text-2xl md:p-8 md:text-[3vw]">BRAH</p>
-            <img src="img/userIcon.png" alt="userPhoto" class="w-16 p-4 md:w-32 md:p-8">
+        <header>
+            <p>BRAH</p>
+            <img src="img/userIcon.png" alt="userPhoto">
         </header>
-        <aside class="bg-gray-100 w-full h-16 p-4 absolute bottom-0 right-0 flex flex-row justify-evenly items-center fixed
-                        md:w-24 md:h-96 md:top-[30vh] md:right-[3vw] md:flex-col md:rounded-2xl">
-            <a href="index.html" class="bg-white w-12 h-12 p-4 md:h-12 md:w-12 rounded shadow hover:bg-gray-300">
-                <img src="img/iconHome.png">
-            </a>
-            <a href="equipamentos.html" class="bg-gray-300 w-12 h-12 p-4 rounded shadow">
-                <img src="img/iconInfo.png">
-            </a>
-            <a href="medicoes.html" class="bg-white w-12 h-12 p-4 rounded shadow hover:bg-gray-300">
-                <img src="img/iconHeart.png">
-            </a>
-        </aside>
-        <!-- bg-gradient-to-br from-blue-950 to-black -->
-        <main class="bg-white w-[80vw] h-[65vh] absolute left-1/2 top-[20vh] transform -translate-x-1/2 rounded-3xl
-                        md:w-[70vw] md:top-[27vh]">
-            <h1 class="absolute left-1/2 top-[-3.5rem] transform -translate-x-1/2
-                        md:top-[-11vh]">
-                <strong class="w-fit px-12 flex justify-center items-center
-                                md:h-[10vh]">Nosso equipamento</strong>
-            </h1>
-            <h3 class="flex justify-center md:absolute md:top-[5vh] md:w-[70vw] text-gray-200 text-[3.5vw] text-center leading-tight
-                        md:text-[1.7vw]">
-                    Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!
-            </h3>
-            <div class="w-[70vw] h-[16vh] absolute top-[10vh] bg-gray-200 left-[5vw] md:top-[13vh] md:left-[5vw] md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-                <img src="img/gy-max30105.png" alt="Max30100" class="absolute top-[1.7vh] left-[7vw] w-[25vw] md:w-[11vw] md:left-1/2 md:transform md:-translate-x-1/2 md:top-4">
-                <p class="w-[35vw] absolute top-[1vh] left-[33vw] text-[.7rem] md:text-[1.2vw] md:leading-tight md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-[25vh]">
-                    <strong>GY-MAX30105 I2C:</strong><br>
-                    Monitora a frequência cardíaca
-                    por meio da iluminação e
-                    captação do sangue quando bombeado.
-                </p>
+        <div class="title">
+            <strong>Nosso Equipamento</strong>
+        </div>
+        <main>
+            <div class="principal">
+                <h3><strong>Quer saber mais sobre nosso equipamento? Abaixo está um breve resumo!</strong></h3>
+                <div id="row-container">
+                    <div class="containers shadow">
+                        <img src="img/gy-max30105.png" alt="Max30100">
+                        <p><strong>GY-MAX30105 I2C:</strong><br>Monitora a frequência cardíaca por meio da iluminação e captação do sangue quando bombeado.</p>
+                    </div>
+                    <div class="containers shadow">
+                        <img src="img/max30205.png" alt="PCB Flexível">
+                        <p><strong>MAX30205:</strong><br>Usado para medir a temperatura, ele é um sensor especifico para temperatura corporal e é da família do Max.</p>
+                    </div>
+                    <div class="containers shadow">
+                        <img src="img/esp32.png" alt="Bmp280">
+                        <p><strong>ESP32:</strong><br>Possibilita a comunicação entre os sensores e o site, um equipamento que possibilita trabalhos IOT.</p>
+                    </div>
+                </div>
             </div>
-            <div class="w-[70vw] h-[16vh] absolute top-[28vh] bg-gray-200 left-[5vw] md:top-[13vh] md:left-1/2 md:transform md:-translate-x-1/2 md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-                <img src="img/max30205.png" alt="PCB Flexível" class="absolute top-[1.7vh] left-[7vw] w-[25vw] md:w-[11vw] md:left-1/2 md:transform md:-translate-x-1/2 md:top-4">
-                <p class="w-[35vw] absolute top-[1vh] left-[33vw] text-[.7rem] md:text-[1.2vw] md:leading-tight md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-[25vh]">
-                    <strong>MAX30205:</strong><br>
-                    Usado para medir a temperatura, ele é um sensor especifico para temperatura corporal e é da família do Max
-                </p>
-            </div>
-            <div class="w-[70vw] h-[16vh] absolute top-[46vh] bg-gray-200 right-[5vw] md:top-[13vh] md:right-[5vw] md:w-[16vw] md:h-[45vh] rounded-3xl shadow">
-                <img src="img/esp32.png" alt="Bmp280" class="absolute top-[1.7vh] left-[7vw] w-[25vw] md:w-[11vw] md:left-1/2 md:transform md:-translate-x-1/2 md:top-4">
-                <p class="w-[35vw] absolute top-[1vh] left-[33vw] text-[.7rem] md:text-[1.2vw] md:leading-tight md:left-1/2 md:transform md:-translate-x-1/2 md:w-[14vw] md:top-[25vh]">
-                    <strong>ESP32:</strong><br>
-                    Possibilita a comunicação entre os sensores e o site, um equipamento que possibilita trabalhos IOT
-                </p>
-            </div>
+            <aside>
+                <a href="index.html" class="shadow">
+                    <img src="img/iconHome.png">
+                </a>
+                <a href="equipamentos.html" class="bg-gray-300 shadow">
+                    <img src="img/iconInfo.png">
+                </a>
+                <a href="medicoes.html" class="shadow">
+                    <img src="img/iconHeart.png">
+                </a>
+            </aside>
         </main>
-
-        <footer class="bg-white w-full h-12 p-4 absolute bottom-0 text-lg text-black hidden fixed
-                        md:flex md:items-center">
-            <p class="whitespace-nowrap"><strong>Créditos:  </strong></p>
+        <footer>
+            <p class="whitespace-nowrap"><strong>Créditos:</strong></p>
             <div class="marquee">
             <div class="marquee-inner">
                 <span>Lucas Batista dos Santos, Luiz Enrique Silva Souza, Marcelo Fransciso Josafá Ribeiro Martins, Matheus Ferrante Silva, Nailah Hirai Koedel do Nascimento e Thomas Comissário da Silva. • </span>
@@ -77,6 +57,5 @@
             </div>
         </div>
         </footer>
-
     </body>
 </html>
